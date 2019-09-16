@@ -1,0 +1,23 @@
+{
+  "name": "an-online-loan-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch ./database/db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Babaseun/an-online-loan-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Babaseun/an-online-loan-app/issues"
+  },
+  "homepage": "https://github.com/Babaseun/an-online-loan-app#readme",
+  "dependencies": {
+    "json-server": "^0.15.1"
+  }
+}
