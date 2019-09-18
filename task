@@ -1,0 +1,5 @@
+[] People can request for loan.
+[] People can see all the loans they have requested for and the status.
+[] Admin should be able to see all request.
+[] Admin can approve a request and decline a request.
+[] Admin can delete a loan request.

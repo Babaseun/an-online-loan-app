@@ -1,6 +1,70 @@
 {
- "users": [],
- "admin": [],
- "requests": [],
- "registered-admin": []
+  "users": [
+    {
+      "FirstName": "Adeyemi",
+      "LastName": "onibokun",
+      "Age": "67",
+      "Occupation": "developer",
+      "HasAppliedBefore": "",
+      "Email": "ababaseun@gmail.com",
+      "Password": "7777",
+      "id": 1
+    },
+    {
+      "FirstName": "tope",
+      "LastName": "onibokun",
+      "Age": "11",
+      "Occupation": "farmer",
+      "HasAppliedBefore": "",
+      "Email": "tope@gmail.com",
+      "Password": "1234",
+      "confirmPassword": "1234",
+      "id": 2
+    }
+  ],
+  "admin": [
+    {
+      "Email": "ababaseun@gmail.com",
+      "Password": "12345",
+      "id": 1
+    }
+  ],
+  "requests": [
+    {
+      "Currency": "Naria",
+      "Amount": "6666",
+      "Date": "Wed Sep 18 2019",
+      "Time": "05:53:59 GMT+0100 (West Africa Standard Time)",
+      "userId": "1",
+      "Status": "Declined",
+      "id": 1
+    },
+    {
+      "Currency": "Euro",
+      "Amount": "5555",
+      "Date": "Wed Sep 18 2019",
+      "Time": "05:54:07 GMT+0100 (West Africa Standard Time)",
+      "Status": "pending",
+      "userId": "1",
+      "id": 2
+    },
+    {
+      "Currency": "Naria",
+      "Amount": "7777",
+      "Date": "Wed Sep 18 2019",
+      "Time": "05:54:15 GMT+0100 (West Africa Standard Time)",
+      "Status": "pending",
+      "userId": "1",
+      "id": 3
+    },
+    {
+      "Currency": "Euro",
+      "Amount": "9999",
+      "Date": "Wed Sep 18 2019",
+      "Time": "05:54:28 GMT+0100 (West Africa Standard Time)",
+      "Status": "pending",
+      "userId": "1",
+      "id": 4
+    }
+  ]
 }

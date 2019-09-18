@@ -1,0 +1,102 @@
+$(document).ready(() => {
+ const options = {
+  url: 'http://localhost:3000/users',
+  type: 'GET',
+  dataType: 'json'
+ };
+ $.ajax(options).done((users) => getAllRequestsForUsers(users));
+});
+function getAllRequestsForUsers(users) {
+ const options = {
+  url: 'http://localhost:3000/requests',
+  type: 'GET',
+  dataType: 'json'
+ };
+ let requests = '';
+
+ $.ajax(options).done((req) => {
+  req.forEach((req) => {
+   const userName = users
+    .filter((user) => user.id === Number(req.userId))
+    .map((user) => user.FirstName);
+
+   requests += `<tr>
+        <th scope="row">${req.id}</th>
+        <td>${userName.toString()}</td>
+        <td>${req.Currency}</td>
+        <td>${req.Amount}</td>
+        <td>${req.Status}</td>
+        <td>${req.Date}</td>
+
+       <td><button class="btn btn-success" onclick = approveButton(${
+        req.id
+       })>Approve</td>
+        <td><button class="btn btn-dark" onclick = declineButton(${
+         req.id
+        })>Decline</td>
+        <td><button class="btn btn-danger" onclick=deleteButton(${
+         req.id
+        })>Delete</td></tr>
+        `;
+  });
+  $('.user-data').append(requests);
+ });
+}
+function deleteButton(id) {
+ const options = {
+  url: `http://localhost:3000/requests/${id}`,
+  type: 'DELETE',
+  dataType: 'json'
+ };
+ $.ajax(options).done(() => console.log('successfully deleted'));
+}
+function approveButton(id) {
+ const options = {
+  url: `http://localhost:3000/requests/${id}`,
+  type: 'GET',
+  dataType: 'json'
+ };
+ $.ajax(options).done((req) => {
+  const updateData = {
+   Currency: req.Currency,
+   Amount: req.Amount,
+   Date: req.Date,
+   Time: req.Time,
+   userId: req.userId,
+   Status: 'Approved'
+  };
+
+  const options = {
+   url: `http://localhost:3000/requests/${id}`,
+   type: 'PUT',
+   dataType: 'json',
+   data: updateData
+  };
+  $.ajax(options).done((req) => console.log('updated successfully'));
+ });
+}
+function declineButton(id) {
+ const options = {
+  url: `http://localhost:3000/requests/${id}`,
+  type: 'GET',
+  dataType: 'json'
+ };
+ $.ajax(options).done((req) => {
+  const updateData = {
+   Currency: req.Currency,
+   Amount: req.Amount,
+   Date: req.Date,
+   Time: req.Time,
+   userId: req.userId,
+   Status: 'Declined'
+  };
+
+  const options = {
+   url: `http://localhost:3000/requests/${id}`,
+   type: 'PUT',
+   dataType: 'json',
+   data: updateData
+  };
+  $.ajax(options).done((req) => console.log('updated successfully'));
+ });
+}

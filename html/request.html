@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link
+   rel="stylesheet"
+   href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+   crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../css/request.css" />
+  <title>Request</title>
+ </head>
+ <body>
+  <div class="parent">
+   <div class="head-nav">
+    <div class="display-3">Credit-Direct</div>
+   </div>
+   <div class="container-fluid">
+    <div class="data-set">
+     <form spellcheck="false" id="postRequest">
+      <div class="form-group">
+       <h1 class="text-center request">Request Form</h1>
+       <select name="" class="form-control" id="select" required>
+        <option value="">Select Currency</option>
+        <option id="" value="Dollar">Dollar</option>
+        <option id="" value="Euro">Euro</option>
+        <option id="" value="Naria">Naria</option>
+        <option id="" value="Rubles">Rubles</option>
+       </select>
+      </div>
+
+      <div class="form-group">
+       <input
+        type="text"
+        class="form-control"
+        placeholder="Enter Amount Here"
+        name="Amount"
+        id="Amount"
+        required
+       />
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Submit</button>
+      <div class="or">
+       Or
+      </div>
+     </form>
+     <a href="user-request.html"
+      ><button class="btn btn-dark btn-block">See All Requests</button></a
+     >
+    </div>
+    <div class="banner">
+     <img
+      class="img-fluid img"
+      src="./images/undraw_services_5tv9.svg"
+      alt="banner"
+     />
+    </div>
+   </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../js/request.js"></script>
+ </body>
+</html>

@@ -1,0 +1,36 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+.head-nav {
+ background: bisque;
+ height: 150px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.head-nav-left {
+ margin-left: 20px;
+}
+.head-nav-right {
+ display: flex;
+ margin-right: 20px;
+}
+.head-nav-links {
+ margin-right: 20px;
+}
+.container-for-banner {
+ height: 500px;
+ display: flex;
+ justify-content: center;
+}
+.introduction-message {
+ width: 600px;
+ margin: 30px auto;
+ line-height: 50px;
+}
+.login-box {
+ display: flex;
+ justify-content: center;
+}

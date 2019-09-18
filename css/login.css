@@ -1,0 +1,11 @@
+.form {
+ width: 500px;
+ margin: 70px auto;
+}
+.header {
+ text-align: center;
+ margin-bottom: 30px;
+}
+#alert-message {
+ display: none;
+}

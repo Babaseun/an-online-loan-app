@@ -1,0 +1,21 @@
+.container-fluid {
+ display: flex;
+
+ justify-content: center;
+ align-items: center;
+}
+.img {
+ width: 400px;
+}
+.data-set {
+ width: 500px;
+}
+.head-nav {
+ height: 150px;
+ display: flex;
+ align-items: center;
+ background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+}
+.request {
+ margin-bottom: 20px;
+}
