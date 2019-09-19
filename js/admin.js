@@ -9,29 +9,24 @@ $(document).ready(() => {
    Email: email,
    Password: password
   };
-  loginAdmin(userData);
+  authenticateAdmin(userData);
  });
 });
 
 function authenticateAdmin(data) {
+ const { Email, Password } = data;
  const options = {
-  url: ` http://localhost:3000/admin`,
+  url: ` http://localhost:3000/admin?Email=${Email}&&Password=${Password}`,
   type: 'GET',
   dataType: 'json'
  };
- $.ajax(options).done((res) => {
-  res.length ? $('#alert-message').show() : loginAdmin(data);
+ $.ajax(options).done((adminData) => {
+  adminData.length ? loginAdmin(adminData) : $('#alert-message').show();
  });
 }
+function loginAdmin([{ id }]) {
+ $('#alert-message').hide();
 
-function loginAdmin(data) {
- const options = {
-  url: '  http://localhost:3000/admin',
-  type: 'POST',
-  dataType: 'json',
-  data: data
- };
- $.ajax(options).done(({ id }) => {
-  localStorage.setItem('key', id);
- });
+ localStorage.setItem('key', id);
+ window.location = 'dashboard.html';
 }

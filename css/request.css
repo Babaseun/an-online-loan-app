@@ -15,7 +15,16 @@
  display: flex;
  align-items: center;
  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+ color: white;
 }
 .request {
  margin-bottom: 20px;
+}
+.or {
+ text-align: center;
+ font-size: 30px;
+ font-weight: bold;
+}
+.logo {
+ margin-left: 20px;
 }

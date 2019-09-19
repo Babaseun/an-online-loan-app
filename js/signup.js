@@ -18,14 +18,14 @@ $(document).ready(() => {
    HasAppliedBefore: appliedBefore,
    Email: email,
    Password: password,
-   confirmPassword: confirmPassword
+   ConfirmPassword: confirmPassword
   };
   verifyPassword(userData);
  });
 });
 function verifyPassword(userData) {
- const { Password, confirmPassword } = userData;
- if (Password === confirmPassword) {
+ const { Password, ConfirmPassword } = userData;
+ if (Password === ConfirmPassword) {
   $('#alert-for-password').hide();
 
   checkIfUserExist(userData);

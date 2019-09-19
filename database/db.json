@@ -2,23 +2,24 @@
   "users": [
     {
       "FirstName": "Adeyemi",
-      "LastName": "onibokun",
-      "Age": "67",
+      "LastName": "Onibokun",
+      "Age": "12",
       "Occupation": "developer",
-      "HasAppliedBefore": "",
+      "HasAppliedBefore": "Yes",
       "Email": "ababaseun@gmail.com",
-      "Password": "7777",
+      "Password": "1234",
+      "ConfirmPassword": "1234",
       "id": 1
     },
     {
-      "FirstName": "tope",
-      "LastName": "onibokun",
-      "Age": "11",
+      "FirstName": "Christy",
+      "LastName": "Amaka",
+      "Age": "23",
       "Occupation": "farmer",
-      "HasAppliedBefore": "",
-      "Email": "tope@gmail.com",
+      "HasAppliedBefore": "No",
+      "Email": "christy@gmail.com",
       "Password": "1234",
-      "confirmPassword": "1234",
+      "ConfirmPassword": "1234",
       "id": 2
     }
   ],
@@ -31,40 +32,22 @@
   ],
   "requests": [
     {
-      "Currency": "Naria",
-      "Amount": "6666",
-      "Date": "Wed Sep 18 2019",
-      "Time": "05:53:59 GMT+0100 (West Africa Standard Time)",
+      "Currency": "Dollar",
+      "Amount": "333333",
+      "Date": "Thu Sep 19 2019",
+      "Time": "1:57:56 AM",
       "userId": "1",
       "Status": "Declined",
       "id": 1
     },
     {
-      "Currency": "Euro",
-      "Amount": "5555",
-      "Date": "Wed Sep 18 2019",
-      "Time": "05:54:07 GMT+0100 (West Africa Standard Time)",
+      "Currency": "Dollar",
+      "Amount": "444",
+      "Date": "Thu Sep 19 2019",
+      "Time": "1:59:43 AM",
       "Status": "pending",
       "userId": "1",
       "id": 2
-    },
-    {
-      "Currency": "Naria",
-      "Amount": "7777",
-      "Date": "Wed Sep 18 2019",
-      "Time": "05:54:15 GMT+0100 (West Africa Standard Time)",
-      "Status": "pending",
-      "userId": "1",
-      "id": 3
-    },
-    {
-      "Currency": "Euro",
-      "Amount": "9999",
-      "Date": "Wed Sep 18 2019",
-      "Time": "05:54:28 GMT+0100 (West Africa Standard Time)",
-      "Status": "pending",
-      "userId": "1",
-      "id": 4
     }
   ]
 }

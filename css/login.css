@@ -1,6 +1,4 @@
 .form {
- width: 500px;
- margin: 70px auto;
 }
 .header {
  text-align: center;
@@ -8,4 +6,22 @@
 }
 #alert-message {
  display: none;
+}
+.login-header {
+ text-align: center;
+}
+.or {
+ text-align: center;
+}
+.img {
+ width: 400px;
+}
+.form {
+ display: flex;
+ height: 500px;
+ align-items: center;
+ justify-content: space-evenly;
+}
+.form-container {
+ width: 500px;
 }

@@ -9,7 +9,7 @@ function fetchNameOfUser() {
   dataType: 'json'
  };
  $.ajax(options).done(({ FirstName }) => {
-  $('#name-of-user').append(`Welcome Back ${FirstName}
+  $('#name-of-user').append(`Welcome  ${FirstName}
   <button class="btn btn-danger" onclick=logout()>Logout</button>
 
   `);
@@ -24,16 +24,24 @@ function fetchUserRequests() {
   dataType: 'json'
  };
  $.ajax(options).done((res) => {
-  let data = '';
-  data += res.map(
-   (req) => `<tr>
-     <th scope="row">${req.id}</th>
+  if (res.length === 0) {
+   $('.no-requests').show();
+  } else {
+   $('.no-requests').hide();
+
+   let count = 1;
+   let data = '';
+   data += res.map(
+    (req) => `<tr>
+     <th scope="row">${count++}</th>
      <td>${req.Currency}</td>
      <td>${req.Amount}</td>
       <td>${req.Status}</td>
       <td>${req.Date}</td></tr>`
-  );
+   );
   $('.user-output').append(data);
+}
+
  });
 }
 const logout = () => {

@@ -9,7 +9,7 @@ $(document).ready(() => {
    Currency: selectedCurrency,
    Amount: amount,
    Date: date.toDateString(),
-   Time: date.toTimeString(),
+   Time: date.toLocaleTimeString(),
    Status: 'pending'
   };
   storeUserRequest(userRequest);

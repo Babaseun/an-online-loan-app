@@ -10,20 +10,34 @@
    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
    crossorigin="anonymous"
   />
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/dashboard.css" />
   <title>Dashboard</title>
  </head>
  <body>
   <div class="container-fluid">
+   <div class="header">
+    <div class="jumbotron">
+     <div class="header-text">
+      <h1>Admin Dashboard</h1>
+      <button class="btn btn-danger" id="logoutAdmin">Logout</button>
+     </div>
+    </div>
+   </div>
    <table class="table">
     <thead class="thead-dark">
      <tr>
       <th scope="col">#</th>
-      <th scope="col">User</th>
+      <th scope="col">Applicants</th>
       <th scope="col">Currency</th>
       <th scope="col">Amount</th>
       <th scope="col">Status</th>
       <th scope="col">Date</th>
-
+      <th scope="col">Time</th>
       <th scope="col">Approve</th>
       <th scope="col">Decline</th>
       <th scope="col">Delete</th>
@@ -31,7 +45,9 @@
     </thead>
     <tbody class="user-data"></tbody>
    </table>
+   <h1 class="no-requests">No Requests</h1>
   </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="../js/dashboard.js"></script>
  </body>
