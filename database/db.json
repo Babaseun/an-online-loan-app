@@ -48,6 +48,42 @@
       "Status": "pending",
       "userId": "1",
       "id": 2
+    },
+    {
+      "Currency": "Rubles",
+      "Amount": "2333",
+      "Date": "Thu Sep 19 2019",
+      "Time": "6:10:11 AM",
+      "Status": "pending",
+      "userId": "2",
+      "id": 3
+    },
+    {
+      "Currency": "Euro",
+      "Amount": "1200",
+      "Date": "Thu Sep 19 2019",
+      "Time": "6:10:32 AM",
+      "userId": "2",
+      "Status": "Approved",
+      "id": 4
+    },
+    {
+      "Currency": "Dollar",
+      "Amount": "555",
+      "Date": "Thu Sep 19 2019",
+      "Time": "6:19:43 AM",
+      "Status": "pending",
+      "userId": "2",
+      "id": 5
+    },
+    {
+      "Currency": "Naira",
+      "Amount": "377778",
+      "Date": "Thu Sep 19 2019",
+      "Time": "6:20:43 AM",
+      "Status": "pending",
+      "userId": "2",
+      "id": 6
     }
   ]
 }

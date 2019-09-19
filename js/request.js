@@ -23,5 +23,8 @@ function storeUserRequest(request) {
   dataType: 'json',
   data: request
  };
- $.ajax(options).done(() => console.log('posted successfully'));
+ $.ajax(options).done(() => {
+     console.log('posted successfully')
+     $('#alert-message').show()
+    });
 }
