@@ -33,6 +33,7 @@ function getAllRequestsForUsers(users) {
         <td>${req.Status}</td>
         <td>${req.Date}</td>
         <td>${req.Time}</td>
+        <td>${req.HasAppliedBefore}</td>
 <td><button class="btn btn-success" onclick = approveButton(${
      req.id
     })>Approve</td>
@@ -54,7 +55,9 @@ function deleteButton(id) {
   type: 'DELETE',
   dataType: 'json'
  };
- $.ajax(options).done(() => console.log('successfully deleted'));
+ $.ajax(options).done(() => {
+  window.location = 'dashboard.html';
+ });
 }
 function approveButton(id) {
  const options = {
@@ -68,6 +71,7 @@ function approveButton(id) {
    Amount: req.Amount,
    Date: req.Date,
    Time: req.Time,
+   HasAppliedBefore: req.HasAppliedBefore,
    userId: req.userId,
    Status: 'Approved'
   };
@@ -78,7 +82,10 @@ function approveButton(id) {
    dataType: 'json',
    data: updateData
   };
-  $.ajax(options).done((req) => console.log('updated successfully'));
+  $.ajax(options).done((req) => {
+   console.log('updated successfully');
+   window.location = 'dashboard.html';
+  });
  });
 }
 function declineButton(id) {
@@ -94,6 +101,7 @@ function declineButton(id) {
    Date: req.Date,
    Time: req.Time,
    userId: req.userId,
+   HasAppliedBefore: req.HasAppliedBefore,
    Status: 'Declined'
   };
 
@@ -103,7 +111,10 @@ function declineButton(id) {
    dataType: 'json',
    data: updateData
   };
-  $.ajax(options).done((req) => console.log('updated successfully'));
+  $.ajax(options).done((req) => {
+   console.log('updated successfully');
+   window.location = 'dashboard.html';
+  });
  });
 }
 $('#logoutAdmin').click(() => logoutAdmin());

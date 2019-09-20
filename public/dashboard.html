@@ -15,7 +15,7 @@
    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="../css/dashboard.css" />
+  <link rel="stylesheet" href="./css/dashboard.css" />
   <title>Dashboard</title>
  </head>
  <body>
@@ -26,6 +26,9 @@
       <h1>Admin Dashboard</h1>
       <button class="btn btn-danger" id="logoutAdmin">Logout</button>
      </div>
+    </div>
+    <div id="alert-message" class="alert alert-success" role="alert">
+     success
     </div>
    </div>
    <table class="table">
@@ -38,6 +41,7 @@
       <th scope="col">Status</th>
       <th scope="col">Date</th>
       <th scope="col">Time</th>
+      <th scope="col">Has Applied For A Loan Before</th>
       <th scope="col">Approve</th>
       <th scope="col">Decline</th>
       <th scope="col">Delete</th>
@@ -49,6 +53,6 @@
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="../js/dashboard.js"></script>
+  <script src="./js/dashboard.js"></script>
  </body>
 </html>

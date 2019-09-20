@@ -1,89 +1,11 @@
 {
-  "users": [
-    {
-      "FirstName": "Adeyemi",
-      "LastName": "Onibokun",
-      "Age": "12",
-      "Occupation": "developer",
-      "HasAppliedBefore": "Yes",
-      "Email": "ababaseun@gmail.com",
-      "Password": "1234",
-      "ConfirmPassword": "1234",
-      "id": 1
-    },
-    {
-      "FirstName": "Christy",
-      "LastName": "Amaka",
-      "Age": "23",
-      "Occupation": "farmer",
-      "HasAppliedBefore": "No",
-      "Email": "christy@gmail.com",
-      "Password": "1234",
-      "ConfirmPassword": "1234",
-      "id": 2
-    }
-  ],
-  "admin": [
-    {
-      "Email": "ababaseun@gmail.com",
-      "Password": "12345",
-      "id": 1
-    }
-  ],
-  "requests": [
-    {
-      "Currency": "Dollar",
-      "Amount": "333333",
-      "Date": "Thu Sep 19 2019",
-      "Time": "1:57:56 AM",
-      "userId": "1",
-      "Status": "Declined",
-      "id": 1
-    },
-    {
-      "Currency": "Dollar",
-      "Amount": "444",
-      "Date": "Thu Sep 19 2019",
-      "Time": "1:59:43 AM",
-      "Status": "pending",
-      "userId": "1",
-      "id": 2
-    },
-    {
-      "Currency": "Rubles",
-      "Amount": "2333",
-      "Date": "Thu Sep 19 2019",
-      "Time": "6:10:11 AM",
-      "Status": "pending",
-      "userId": "2",
-      "id": 3
-    },
-    {
-      "Currency": "Euro",
-      "Amount": "1200",
-      "Date": "Thu Sep 19 2019",
-      "Time": "6:10:32 AM",
-      "userId": "2",
-      "Status": "Approved",
-      "id": 4
-    },
-    {
-      "Currency": "Dollar",
-      "Amount": "555",
-      "Date": "Thu Sep 19 2019",
-      "Time": "6:19:43 AM",
-      "Status": "pending",
-      "userId": "2",
-      "id": 5
-    },
-    {
-      "Currency": "Naira",
-      "Amount": "377778",
-      "Date": "Thu Sep 19 2019",
-      "Time": "6:20:43 AM",
-      "Status": "pending",
-      "userId": "2",
-      "id": 6
-    }
-  ]
+ "users": [],
+ "admin": [
+  {
+   "Email": "ababaseun@gmail.com",
+   "Password": "12345",
+   "id": 10
+  }
+ ],
+ "requests": []
 }
